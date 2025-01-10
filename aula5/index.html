@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styele.css">
     <title>Lista de Compras</title>
 </head>
 <body>
-    <p id="paragrafo">Você digitou:</p>
-    <p id="outroParagrafo">Paragrafo</p>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <p class="subtitle">Facilite sua ida ao supermercado!</p>
 
-    <button onclick="alert('Salvo com sucesso')">Salvar</button>
+        <div class="form">
+            <input type="text" maxlength="15" placeholder="Digite aqui">
+            <input type="number" placeholder="Quantidade" min="1" max="15">
+            <button>Adicionar Item</button>
+        </div>
 
-    <button onclick="alteraP()">Cliqui aqui para alterar texto</button>
+        <ul class="list">
+            <li>Item</li>
+        </ul>
 
-    <br>
-
-    <h2>Lista de Hábitos Saudavéis</h2>
-    <ol id="lista">
-        <li>Beber água</li>
-        <li>Dormir bem</li>
-        <li>Comer frutas</li>
-        <li>Praticar atividades físicas</li>
-    </ol>
-
-    <button onclick="addHabito()">Adicionar Hábito</button>
-
+        <div class="actions">
+            <button class="clean">Limpar lista</button>
+            <button class="boughtgoods">Limpar comprados</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
