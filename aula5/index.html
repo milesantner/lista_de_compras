@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Lista de Compras</title>
 </head>
 <body>
-    
+    <p id="paragrafo">Você digitou:</p>
+    <p id="outroParagrafo">Paragrafo</p>
+
+    <button onclick="alert('Salvo com sucesso')">Salvar</button>
+
+    <button onclick="alteraP()">Cliqui aqui para alterar texto</button>
+
+    <br>
+
+    <h2>Lista de Hábitos Saudavéis</h2>
+    <ol id="lista">
+        <li>Beber água</li>
+        <li>Dormir bem</li>
+        <li>Comer frutas</li>
+        <li>Praticar atividades físicas</li>
+    </ol>
+
+    <button onclick="addHabito()">Adicionar Hábito</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
