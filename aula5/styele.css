@@ -8,8 +8,11 @@
     --bodycolour: #FBF2ED;
     --containercolour: #CDD5C6;
     --buttom: #CED5DF;
+    --buttomclean: #AABCC0;
+    --buttomgoods: #B1C1D0;
     --darkercolour: #31312F;;
     --softred: #D99789;
+    --buttomhover: #F5A15B;
 }
 
 body{
@@ -39,6 +42,35 @@ p{
     margin: 10px 0;
 }
 
+.inputgroup{
+    display: flex; /*deixa um do lado do outro*/
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+input{
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+    font-family: "Montserrat", serif;
+}
+
+/*
+input:focus{ pseudo-class is used to select and style the element that gets focus.
+    outline: none;
+    border-color: #ddd
+}
+*/
+
+#item{
+    width: 70%;
+}
+
+#qntd{
+    width: 30%;
+}
+
 #add{
     background-color: var(--buttom);
     width: 100%;
@@ -48,9 +80,66 @@ p{
     margin: 10px 0;
     cursor: pointer;
     font-weight: 600;
+    font-family: "Montserrat", serif;
 }
 
 #add:hover{
-    background-color: #CE8052;
+    background-color: var(--buttomhover);
     transition: .5s;
+    padding: 12px;
+}
+
+.actions{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.clean{
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    background-color: var(--buttomclean);
+    font-family: "Montserrat", serif;
+}
+
+.clean:hover{
+    background-color: var(--buttomhover);
+    transition: .5s;
+    padding: 10px;
+}
+
+.boughtgoods{
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    background-color: var(--buttomgoods);
+    font-family: "Montserrat", serif;
+}
+
+.boughtgoods:hover{
+    background-color: var(--buttomhover);
+    transition: .5s;
+    padding: 10px;
+}
+
+li{
+    display: flex;
+    margin: 15px 0;
+}
+
+li button{ /*botão é filho da li*/
+    color: #E1523D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+li p{
+    margin-left: 5px;
 }

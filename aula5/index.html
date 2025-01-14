@@ -15,18 +15,18 @@
         <p class="subtitle">Facilite sua ida ao supermercado!</p>
 
         <div class="form">
-            <div>
-                <input type="text" maxlength="15" placeholder="Digite aqui">
-                <input type="number" placeholder="Quantidade" min="1" max="15">
+            <div class="inputgroup">
+                <input id="item" type="text" placeholder="Digite aqui" maxlength="15">
+                <input id="qntd" type="number" placeholder="Quantidade" min="1" max="15">
             </div>
-            <button id="add">Adicionar Item</button>
+            <button id="add" onclick="addItem()">Adicionar Item</button>
         </div>
 
         <ul class="list"></ul>
 
         <div class="actions">
-            <button class="clean">Limpar lista</button>
-            <button class="boughtgoods">Limpar comprados</button>
+            <button class="clean" onclick="cleanList()">Limpar lista</button>
+            <button class="boughtgoods" onclick="cleanBoughts()">Limpar comprados</button>
         </div>
     </div>
     <script src="script.js"></script>
