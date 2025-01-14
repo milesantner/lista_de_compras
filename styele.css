@@ -143,3 +143,44 @@ li button{ /*botão é filho da li*/
 li p{
     margin-left: 5px;
 }
+
+@media (max-width:800px){
+    body{
+        background-color: var(--darkercolour);
+    }
+
+    .container{
+        background-color: #98A6A2;
+    }
+
+    #add{
+        background-color: #34464D;
+        color: white
+    }
+
+    .clean{
+        background-color: #66796B;
+        color: white;
+    }
+
+    .boughtgoods{
+        background-color: #60714E;
+        color: white;
+    }
+
+    #item{
+        width: 100%;
+    }
+    
+    #qntd{
+        width: 100%;
+    }
+
+    .inputgroup{
+        flex-direction: column;
+    }
+
+    p{
+        color: white;
+    }
+}
